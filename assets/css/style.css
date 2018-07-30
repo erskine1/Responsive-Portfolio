@@ -332,3 +332,15 @@ footer {
 
 
 }
+
+@media screen and (max-width: 400px) {
+
+  li a {
+    font-size: 22px;
+  }
+
+  .navspace {
+    height: 84px;
+  }
+
+}
