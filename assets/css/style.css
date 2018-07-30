@@ -14,9 +14,10 @@ html, body {
   color: #ffffff;
 }
 
-body {
+/* Added for footer - not working */
+/* body {
   position: relative;
-}
+} */
 
 /* NAVBAR */
 
@@ -246,13 +247,13 @@ input[type=submit]:active {
 }
 
 
-/* this is putting both footers on the bottom rather than stacking them */
-
+/* absolute not working for putting footer at the bottom.  */
+/* May need to divide the footer into divs instead of two footer classes */
 footer {
-  position: absolute;
+  /* position: relative;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   color: #ffffff;
   text-align: center;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
@@ -265,6 +266,13 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+/* Trying to mess with footer - not working */
+/* @media screen and (min-width: 960px) {
+  body {
+    padding-bottom: 100px;
+  }
+} */
 
 @media screen and (max-width: 920px) {
 
