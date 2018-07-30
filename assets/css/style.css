@@ -51,13 +51,9 @@ li a {
 }
 
 header {
-  float: left;
-  position: relative;
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
-  font-size: 24px;
   text-align: center;
-  font-variant: small-caps;
 }
 
 li a:hover {
@@ -88,9 +84,8 @@ li a:active {
 }
 
 .subtitle {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding: 0 20px;
-
 }
 
 .masthead {
@@ -124,6 +119,16 @@ li a:active {
   /* min-width: 290px; */
 }
 
+.tile-title {
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #56260c;
+  opacity: 0.9;
+}
+
 .tile-bg {
   position: absolute;
   top: 0;
@@ -135,6 +140,13 @@ li a:active {
   background-size: cover;
   margin: 10px;
   border: 1px solid lightgray;
+  color: #c8a52c;
+}
+
+.tile-bg:hover {
+  border: 1px solid #c8a52c;
+  color: #fff;
+  opacity: 1;
 }
 
 .bg-1 {
@@ -155,14 +167,14 @@ li a:active {
 
 h1 {
   font-size: 34px;
-  /* border-bottom: 3px solid #cccccc; */
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  /* font-family: 'Georgia', Times, 'Times New Roman', serif; */
   padding-bottom: 40px;
+  font-variant: small-caps;
 }
 
 h2 {
   font-size: 24px;
-  
+  font-variant: small-caps;
 }
 
 p {
