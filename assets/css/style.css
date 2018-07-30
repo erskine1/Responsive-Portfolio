@@ -23,7 +23,7 @@ html, body {
   }
 }
 
-/* navbar elements */
+/* NAVBAR */
 
 nav {
   background-image: url(../images/zwartevilt_lbrown.png);
@@ -51,13 +51,11 @@ li a {
   text-decoration: none;
   color: #ffffff;
   font-variant: small-caps;
-  font-size: 18px;
+  font-size: 24px;
 }
 
-header {
-  font-family: 'Open Sans', Arial, sans-serif;
+.left-title {
   font-weight: 700;
-  text-align: center;
 }
 
 li a:hover {
@@ -70,11 +68,19 @@ li a:active {
   background: #666666;
 }
 
+.nav-btn {
+  display: none;
+}
+
+#nav-check  {
+  display: none;
+}
+
 /* HOME PAGE */ 
 
 .page-section {
   background-image: url("../images/zwartevilt_brown.png");
-  /* overflow: auto; */
+  overflow: auto;
   max-width: 1600px;
   margin: 0 auto;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
@@ -118,7 +124,7 @@ li a:active {
   position: relative;
   clear: none;
   float: left;
-  overflow: auto;
+  /* overflow: auto; */
   width: calc((100%-100px) / 4);
   height: 100%;
   /* padding: 10px; */
@@ -276,3 +282,105 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 920px) {
+
+  .grid-tile {
+    width: calc((100%-100px) / 2);
+  }
+
+  .tile-bg {
+    margin: 0;
+  }
+
+  .grid-responsive {
+    background-image: url("../images/zwartevilt_brown.png");
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  h1 {
+    text-align: center;
+  }
+
+  .grid-tile {
+    width: 100%;
+  }
+
+  .grid-row {
+    padding: 0;
+  }
+
+  .grid-responsive {
+    background-image: url("../images/zwartevilt_brown.png");
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+    height: 800px;
+  }
+
+  .subtitle {
+    text-align: center;
+    padding: 3px;
+  }
+
+  li a {
+    float: left;
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 475px) {
+
+  .navspace {
+    background-image: url(../images/zwartevilt_lbrown.png);
+  }
+
+  .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav-btn label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav-btn label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav-btn label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navLinks {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navLinks a {
+    display: block;
+    width: 100%;
+  }
+  #nav-check:not(:checked) + .navLinks {
+    height: 0px;
+  }
+  #nav-check:checked + .navLinks {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+}
