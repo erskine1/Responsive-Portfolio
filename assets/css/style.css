@@ -107,7 +107,7 @@ li a:active {
   position: relative;
   clear: none;
   float: left;
-  width: calc((100%-100px) / 4);
+  width: calc((100%) / 4);
   height: 100%;
 }
 
@@ -262,7 +262,7 @@ footer {
 @media screen and (max-width: 920px) {
 
   .grid-tile {
-    width: calc((100%-100px) / 2);
+    width: calc((100%) / 2);
   }
 
   .tile-bg {
@@ -356,6 +356,20 @@ footer {
 
   .navspace {
     height: 84px;
+  }
+
+}
+
+@media screen and (max-width: 373px) {
+
+  li a {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navspace {
+    height: 75.2px;
   }
 
 }
