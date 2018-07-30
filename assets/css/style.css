@@ -32,8 +32,12 @@ nav {
 
 .navLinks {
   overflow: auto;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.left {
+  float: left;
 }
 
 li a {
@@ -52,9 +56,6 @@ header {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
-  /* background-image: url(../images/zwartevilt_lbrown.png); */
-  /* There should be a better way to make this fit */
-  /* padding: 25px 16px; */
   text-align: center;
   font-variant: small-caps;
 }
@@ -73,17 +74,25 @@ li a:active {
 
 .page-section {
   background-image: url("../images/zwartevilt_brown.png");
-  overflow: auto;
+  /* overflow: auto; */
   max-width: 1600px;
   margin: 0 auto;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
   border-top: solid 5px #000000;
+  min-height: 300px;
 }
 
 .content {
   max-width: 800px;
   padding: 20px 20px;
-  margin-left: 0;
+  /* margin-left: 0; */
+  /* margin: 0 auto; */
+}
+
+.subtitle {
+  text-transform: uppercase;
+  padding: 0 20px;
+
 }
 
 .masthead {
@@ -97,16 +106,12 @@ li a:active {
   height: 60px;  
 }
 
-.grid {
-  /* box-sizing: border-box; */
-}
-
 .grid-row {
   /* margin-top: 90px; */
   padding: 10px;
-  /* margin: 0; */
+  margin: 0 auto;
   max-width: 1280px;
-  height: 35vh;
+  height: 200px;
 }
 
 .grid-tile {
@@ -155,6 +160,11 @@ h1 {
   /* border-bottom: 3px solid #cccccc; */
   font-family: 'Georgia', Times, 'Times New Roman', serif;
   padding-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  
 }
 
 p {
