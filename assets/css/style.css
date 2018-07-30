@@ -172,7 +172,6 @@ li a:active {
 
 h1 {
   font-size: 34px;
-  /* font-family: 'Georgia', Times, 'Times New Roman', serif; */
   padding-bottom: 40px;
   font-variant: small-caps;
 }
@@ -185,36 +184,11 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.7rem;
-  /* margin: 0px auto; */
 }
 
-/* portfolio page */ 
-
-.project {
-  float: left;
-  position: relative;
-  margin-right: 30px;
-  margin-bottom: 30px;
+.contact {
+  margin: 0 auto;
 }
-
-.button {
-  position: absolute;
-  width: 300px;
-  bottom: 15px;
-  color: #ffffff;
-  padding: 20px 0;
-  background: #4aaaa5;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.button:hover {
-  background: #666666;
-}
-
-/* contact page */
 
 input[type=text], select, textarea {
   width: 100%;
@@ -224,6 +198,7 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 textarea {
@@ -231,15 +206,24 @@ textarea {
 }
 
 input[type=submit] {
-  background: #4aaaa5;
+  background: transparent;
   color: #ffffff;
-  padding: 12px 30px;
-  border: none;
+  padding: 8px 24px;
+  border: 1px solid #c8a52c;
   cursor: pointer;
+  font-variant: small-caps;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 24px;
 }
 
 input[type=submit]:hover {
-  background: #666666;
+  background: #56260c;
+  color: #c8a52c;
+  transition: all .2s ease-in-out;
+}
+
+input[type=submit]:active {
+  opacity: 0.8;
 }
 
 .footer-social {
