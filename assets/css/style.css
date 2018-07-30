@@ -296,14 +296,19 @@ footer {
   
   li a {
     float: left;
-    font-size: 18px;
+    /* font-size: 18px; */
+    padding: 10px 20px;
+  }
+
+  .navspace {
+    height: 44px;
   }
 }
 
 @media screen and (max-width: 640px) {
 
   .navspace  {
-    height: 116px;
+    height: 88px;
   }
 
   h1 {
@@ -333,11 +338,7 @@ footer {
     width: 100%;
   }
 
-  .center-me a {
-    width: 33.33%;
-  }
-
- .left-nav {
+ .left-nav, .center-me a {
     width: 33.33%;
   }
 
