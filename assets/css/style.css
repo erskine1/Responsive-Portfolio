@@ -1,17 +1,21 @@
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
-* {
+*, *:after, *:before {
   box-sizing: inherit;
 }
 
-html, body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  height: 100%;
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   background: #46332a;
   color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 /* Added for footer - not working */
@@ -97,6 +101,10 @@ li a:active {
 
 .divider {
   height: 5px;
+}
+
+.space-hg {
+  height: 200px;
 }
 
 /* PROJECT COVERS */
@@ -235,6 +243,13 @@ input[type=submit]:active {
 .footer-social {
   background-image: url(../images/zwartevilt_brown_highlight.png);
   padding: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  display: block;
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
 }
 
 .footer-social a {
@@ -246,33 +261,33 @@ input[type=submit]:active {
   opacity: 1;
 }
 
-
-/* absolute not working for putting footer at the bottom.  */
-/* May need to divide the footer into divs instead of two footer classes */
-footer {
-  /* position: relative;
-  left: 0;
+.footer-pane {
+  position: absolute;
   right: 0;
-  bottom: 0; */
-  color: #ffffff;
-  text-align: center;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+  bottom: 0;
+  left: 0;
+  background: #211510;
+  background-image: url(../images/zwartevilt_dkbrown.png);
+  margin-top: 1000px;
 }
 
-.footer-main {
-  padding: 40px 0 5px 0;
-  font-size: 12px;
-  background-image: url(../images/zwartevilt_dkbrown.png);
+.pane-content {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 40px 0 15px 0;
 }
 
 /* MEDIA QUERIES */
 
-/* Trying to mess with footer - not working */
-/* @media screen and (min-width: 960px) {
-  body {
-    padding-bottom: 100px;
+@media (min-width: 980px) {
+  .pane-big {
+    background-size: 100%;
   }
-} */
+}
 
 @media screen and (max-width: 920px) {
 
