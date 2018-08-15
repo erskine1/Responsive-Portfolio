@@ -126,7 +126,7 @@ li a:active {
   text-align: center;
   padding: 10px;
   background: #56260c;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .tile-bg {
@@ -150,19 +150,23 @@ li a:active {
 }
 
 .bg-1 {
-  background-image: url("../images/tile_1.jpg")
+  background-image: url("../images/giphy-project.png")
 }
 
 .bg-2 {
-  background-image: url("../images/tile_2.jpg")
+  background-image: url("../images/trivia-project.png")
 }
 
 .bg-3 {
-  background-image: url("../images/tile_3.jpg")
+  background-image: url("../images/combat-project.jpg")
 }
 
 .bg-4 {
-  background-image: url("../images/tile_4.jpg")
+  background-image: url("../images/hangman-project.png")
+}
+
+.bg-0 {
+  background-image: url("../images/tile_1.jpg")
 }
 
 /* CONTENT */
