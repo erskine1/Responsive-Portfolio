@@ -165,8 +165,23 @@ li a:active {
   background-image: url("../images/hangman-project.png")
 }
 
+
+/* placeholder images */
+
 .bg-0 {
   background-image: url("../images/tile_1.jpg")
+}
+
+.bg-01 {
+  background-image: url("../images/tile_2.jpg")
+}
+
+.bg-02 {
+  background-image: url("../images/tile_3.jpg")
+}
+
+.bg-03 {
+  background-image: url("../images/tile_4.jpg")
 }
 
 /* CONTENT */
